@@ -20,8 +20,28 @@
 
     <main>
         <h2>Contact Form</h2>
-        <p>If you have any questions or ideas, please fill out the form to reach me.
-            Thank you!</p>
+        <p>If you have any questions or ideas, please fill out the form to reach me. Thank you!</p>
+        
+        <form action="submit_contact.html" method="POST">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="reason">Reason for contact:</label>
+            <select id="reason" name="reason" required>
+                <option value="saying_hi">Saying Hi</option>
+                <option value="looking_for_contractor">Looking for a Contractor</option>
+                <option value="interview_interest">Interested in an Interview</option>
+            </select><br><br>
+            
+            <label for="message">Comment:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
     </main>
 </body>
 </html>
